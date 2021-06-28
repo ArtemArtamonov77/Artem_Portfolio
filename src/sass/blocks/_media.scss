@@ -1,0 +1,267 @@
+@media (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 510px;
+            column-gap: 50px;
+        }
+        &__skills {
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,240px);
+            column-gap: 20px;
+            &-item {
+                grid-template-columns: 40px 175px;
+            }
+        }
+    }
+    .resume {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: repeat(2,375px);
+            column-gap: 80px;
+            padding-top: 40px;
+        }
+    }
+    .tools {
+        padding-top: 100px;
+        &__items {
+            padding: 0 15px 15px 15px;
+            margin: 30px 0 70px 0;
+            grid-template: repeat(2,minmax(260px,auto))/repeat(4,225px);
+            grid-auto-rows: minmax(260px,auto);
+        }
+        .divider {
+            margin: 20px auto 0 auto;
+        }
+        &__ratings {
+            grid-template: repeat(2,minmax(65px,auto))/repeat(3,300px);
+            column-gap: 20px;
+            row-gap: 30px;
+            &-line {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title{
+        &_fz36 {
+            font-size: 28px;
+        }
+    } 
+    .promo__btns {
+        margin-left: 335px;
+    }
+    .about {
+
+        padding-top: 60px;
+        &__wrapper {
+            grid-template-columns: 315px 375px;
+            column-gap: 35px;
+            row-gap: 20px;
+        }
+/*         &__photo {
+            img {
+                height: 100%;
+            }
+        } */
+        &__skills {
+            grid-template: repeat(1,minmax(115px,auto))/repeat(2,185px);
+            column-gap: 10px;
+            &-item {
+                column-gap: 10px;
+                grid-template-columns: 40px 130px;
+            }
+        }
+
+    }
+    .resume {
+        padding-top: 60px;
+        &__wrapper {
+            grid-template-columns: repeat(2,308px);
+            column-gap: 37px;
+            padding: 30px 35px 0 35px;
+        }
+        .divider {
+            margin: 15px auto 0 auto;
+        }
+    }
+    .tools {
+        &__items {
+            margin-bottom: 50px;
+            grid-template: repeat(2,minmax(260px,auto))/repeat(3,225px);
+        }
+        &__ratings {
+            grid-template: repeat(2,minmax(65px,auto))/repeat(3,228px);
+            row-gap: 20px;
+            &-line {
+                width: 228px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .promo {
+        &__title {
+            width: 480px;
+            font-size: 37px;
+            line-height: 39px;
+        }
+        .promo__btns {
+            margin-left: 145px;
+        }
+    }
+    .menu {
+        &__block {
+            padding-top: 100px;
+        }
+    }
+    .about {
+
+        &__wrapper {
+            grid-template-columns: 240px 300px;
+            column-gap: 25px;
+            row-gap: 10px;
+        }
+        &__skills {
+            grid-template-columns: 300px;
+            grid-auto-rows: minmax(100px,auto);
+            row-gap: 10px;
+            &-item {
+                grid-template-columns: 40px 250px;
+            }
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: repeat(2,250px);
+            column-gap: 15px;
+            padding: 30px 20px 0 20px;
+        }
+    }
+    .tools { 
+        &__items {
+            grid-template: repeat(2,minmax(260px,auto))/repeat(2,240px);
+            padding-left: 25px;
+        }
+        &__ratings {
+            padding-left: 10px;
+            grid-template: repeat(3,minmax(65px,auto))/repeat(2,250px);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .title{
+        &_fz36 {
+            font-size: 24px;
+        }
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+        margin-left: 30px;
+    }
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 45%/cover;
+
+        &__title {
+            width: 280px;
+            font-size: 26px;
+            line-height: 34px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+        &__btns {
+            width: 235px;
+        }
+        .promo__btns {
+            margin: 32px 0 0 0;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 340px auto auto / 100%;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: 290px;
+            &-item {
+                grid-template-columns: 40px 240px;
+            }
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            padding: 120px 0 0 20px;
+            width: 250px;
+        }
+        &__link {
+            font-size: 18px;
+            line-height: 26px;
+            &::before {
+                top: 7px;
+            }
+        }
+        &__social {
+            bottom: 35px;
+        }
+    }
+    .resume {
+        padding-top: 20px;
+        &__wrapper {
+            grid-template-columns: 275px;
+            row-gap: 30px;
+        }
+    }
+    .tools {
+        padding-top: 80px;
+        &__items {
+            grid-template-columns: 280px;
+            padding-left: 10px;
+
+        }
+        .title {
+            line-height: 40px;
+        }
+        .tools__item {
+            h3 {
+                margin-top: 0;
+            }
+        }
+        &__ratings {
+            padding-left: 15px;
+            grid-template-columns: 270px;
+            grid-auto-rows: minmax(60px, auto);
+        }
+        .title__section-title::before {
+            top: 2px;
+        }
+        .tools__ratings-title::before {
+            top: 7%;
+        }
+    }
+}

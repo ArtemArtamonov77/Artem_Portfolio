@@ -12,12 +12,14 @@
         grid-row: 1/3;
         img {
             width: 100%;/* если в будущем замениться картинка на более большую, то она не выйдет за рамки грида */
+            height: 100%;
+            object-fit: cover;/* для img неподходящего размера */
         }
     }
     &__descr {
         padding-top: 5px;
         .divider {
-            margin-top: 0;
+            margin: 0;
         }
     }
     &__title {
